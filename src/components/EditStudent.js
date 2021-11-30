@@ -3,13 +3,10 @@ import { StudentContext } from "../App";
 import { useNavigate, useParams } from "react-router-dom";
 function EditStudent() {
   useEffect(() => {
-    {
-      console.log(params);
-      if (params.id) {
-        getData();
-      }
+    if (params.id) {
+      getData();
     }
-  }, []);
+  });
 
   let context = useContext(StudentContext);
   let navigate = useNavigate();
