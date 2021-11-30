@@ -1,6 +1,5 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import { StudentContext } from "../App";
-import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 function AllStudents() {
   let navigate = useNavigate();
